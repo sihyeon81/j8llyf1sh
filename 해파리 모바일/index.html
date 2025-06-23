@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>해파리 링크</title>
+  <style>
+    :root{
+      --bg:#2646c5;
+      --txt:#ffffff;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{
+      background:var(--bg);
+      overflow:hidden;
+      height:100vh;
+      font-family:system-ui, sans-serif;
+    }
+
+    .jelly{
+      position:absolute;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      text-decoration:none;
+      color:var(--txt);
+      font-weight:600;
+      transform:translate(-50%, -50%);
+      animation-timing-function:ease-in-out;
+      animation-iteration-count:infinite;
+    }
+    .jelly img{width:100%;height:auto;display:block;pointer-events:none}
+    .jelly span{position:absolute;top:50%;left:50%;
+                transform:translate(-50%,-50%);
+                font-size:0.84rem;pointer-events:none;}
+
+    .ig      {left:78%; top:22%; width:160px;
+             animation:float1 14s infinite ease-in-out,
+                       pulse  7s  infinite ease-in-out;}
+    .arcive  {left:20%; top:38%; width:110px;
+             animation:float2 16s infinite ease-in-out,
+                       pulse  8s  infinite ease-in-out;}
+    .youtube {left:75%; top:68%; width:110px;
+             animation:float3 18s infinite ease-in-out,
+                       pulse  9s  infinite ease-in-out;}
+    .blog    {left:25%; top:88%; width:160px;
+             animation:float4 20s infinite ease-in-out,
+                       pulse 10s  infinite ease-in-out;}
+
+    @keyframes float1{
+      0%{   transform:translate(-50%,-50%) translate(0,0);}
+      25%{  transform:translate(-50%,-50%) translate(-20px, 25px);}
+      50%{  transform:translate(-50%,-50%) translate(15px, -15px);}
+      75%{  transform:translate(-50%,-50%) translate(-10px, 20px);}
+      100%{ transform:translate(-50%,-50%) translate(0,0);}
+    }
+    @keyframes float2{
+      0%{   transform:translate(-50%,-50%) translate(0,0);}
+      25%{  transform:translate(-50%,-50%) translate(25px,-20px);}
+      50%{  transform:translate(-50%,-50%) translate(-15px,15px);}
+      75%{  transform:translate(-50%,-50%) translate(10px,-18px);}
+      100%{ transform:translate(-50%,-50%) translate(0,0);}
+    }
+    @keyframes float3{
+      0%{   transform:translate(-50%,-50%) translate(0,0);}
+      25%{  transform:translate(-50%,-50%) translate(-18px,18px);}
+      50%{  transform:translate(-50%,-50%) translate(12px,-22px);}
+      75%{  transform:translate(-50%,-50%) translate(-14px,15px);}
+      100%{ transform:translate(-50%,-50%) translate(0,0);}
+    }
+    @keyframes float4{
+      0%{   transform:translate(-50%,-50%) translate(0,0);}
+      25%{  transform:translate(-50%,-50%) translate(22px,-18px);}
+      50%{  transform:translate(-50%,-50%) translate(-18px,20px);}
+      75%{  transform:translate(-50%,-50%) translate(14px,-12px);}
+      100%{ transform:translate(-50%,-50%) translate(0,0);}
+    }
+
+    @keyframes pulse{
+      0%,100%{transform:scale(1)        translate(-50%,-50%);}
+      50%     {transform:scale(1.08)     translate(-50%,-50%);}
+    }
+  </style>
+</head>
+<body>
+
+  <a href="https://www.instagram.com/s1hy8on/" target="_blank" class="jelly ig">
+    <img src="jellyfish1.png" alt="Instagram Jellyfish">
+    <span>INSTAGRAM</span>
+  </a>
+
+  <a href="https://www.instagram.com/m8rma1d/" target="_blank" class="jelly arcive">
+    <img src="jellyfish2.png" alt="Archive IG Jellyfish">
+    <span>ARCIVE&nbsp;IG</span>
+  </a>
+
+  <a href="https://www.youtube.com/@s1hy8on" target="_blank" class="jelly youtube">
+    <img src="jellyfish3.png" alt="YouTube Jellyfish">
+    <span>YOUTUBE</span>
+  </a>
+
+  <a href="https://blog.naver.com/581221_" target="_blank" class="jelly blog">
+    <img src="jellyfish4.png" alt="Naver Blog Jellyfish">
+    <span>NAVER&nbsp;BLOG</span>
+  </a>
+
+</body>
+</html>
+
